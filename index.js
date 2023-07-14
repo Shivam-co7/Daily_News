@@ -3,7 +3,7 @@ let newsCards     = document.getElementById('newsCards');
 let newsAccordion = document.getElementById('newsAccordion');
 
 // setting up news variables
-let apiKey = '66fa0acc4ffa4a38bb3c6af79a5522c0';
+let apiKey = '<yourApiKey>';
 let source = 'bbc-news';
 
 // creating an ajax GET request
