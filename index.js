@@ -83,13 +83,17 @@ xhr2.onload = function() {
             <div id="${i}" class="accordion-collapse collapse" data-bs-parent="#newsAccordion">
                 <div class="accordion-body">
                     <strong>Description: </strong> ${element['description']}
+                    <div>
+                    <img src="${element['urlToImage']}" alt="image not found!" class="rounded" style="margin-right:20px; height:200px; width:200px;">
+                    <a class="btn btn-primary my-2" href = "${element['url']}" target="_blank"> Read more...</a>
+                    </div>
                 </div>
             </div>
         </div>`;
     }
     else{
         var news = `  <!-- accordian -->
-        <div class="accordion-item">
+        <div class="accordion-item my-1">
             <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#${i}" aria-expanded="true" aria-controls="${i}">
                 ${i}) ${element['title']}
@@ -98,6 +102,10 @@ xhr2.onload = function() {
             <div id="${i}" class="accordion-collapse collapse show" data-bs-parent="#newsAccordion">
                 <div class="accordion-body">
                     <strong>Description: </strong> ${element['description']}
+                    <div>
+                    <img src="${element['urlToImage']}" alt="image not found!" class="rounded" style="margin-right:20px; height:200px; width:200px;">
+                    <a class="btn btn-primary my-2" href = "${element['url']} "target="_blank"> Read more...</a>
+                    </div>
                 </div>
             </div>
         </div>`;
